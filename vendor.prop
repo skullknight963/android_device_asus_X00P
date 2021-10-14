@@ -166,6 +166,10 @@ ro.vendor.use_data_netmgrd=true
 persist.data.netmgrd.qos.enable=true
 persist.vendor.data.mode=concurrent
 
+# Soc
+ro.soc.manufacturer=Qualcomm
+ro.soc.model=MSM8937
+
 # SurfaceFlinger
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
 ro.surface_flinger.max_virtual_display_dimension=4096
