@@ -125,6 +125,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libgui_vendor \
+    libgui_shim \
     libstdc++.vendor \
     android.frameworks.displayservice@1.0.vendor
 
