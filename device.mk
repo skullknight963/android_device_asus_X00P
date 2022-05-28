@@ -255,7 +255,7 @@ PRODUCT_COPY_FILES += \
 
 # Net
 PRODUCT_PACKAGES += \
-    netutils-wrapper-1.0
+    libandroid_net
 
 # OMX
 PRODUCT_PACKAGES += \
