@@ -6,6 +6,12 @@ dalvik.vm.dex2oat-threads=8
 dalvik.vm.image-dex2oat-filter=speed
 ro.sys.fw.dex2oat_thread_count=8
 
+# App launch prefetching (IORapd)
+ro.iorapd.enable=false
+iorapd.perfetto.enable=false
+iorapd.readahead.enable=false
+persist.device_config.runtime_native_boot.iorap_readahead_enable=false
+
 # Boot
 sys.vendor.shutdown.waittime=500
 
