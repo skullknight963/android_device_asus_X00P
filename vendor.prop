@@ -52,6 +52,7 @@ camera.hal1.packagelist=com.skype.raider,com.google.android.talk
 camera.lowpower.record.enable=1
 media.camera.ts.monotonic=1
 persist.camera.gyro.disable=0
+persist.camera.HAL3.enabled=1
 persist.camera.isp.clock.optmz=0
 persist.camera.stats.test=5
 persist.vendor.camera.HAL3.enabled=1
@@ -72,9 +73,9 @@ persist.vendor.dpm.loglevel=0
 # Dalvik
 dalvik.vm.heapgrowthlimit=192m
 dalvik.vm.heapmaxfree=8m
-dalvik.vm.heapminfree=512k
+dalvik.vm.heapminfree=4m
 dalvik.vm.heapsize=512m
-dalvik.vm.heapstartsize=8m
+dalvik.vm.heapstartsize=16m
 dalvik.vm.heaptargetutilization=0.75
 dalvik.vm.dexopt-flags=o=y,m=y,v=n
 dalvik.vm.execution-mode=int:jit
@@ -92,26 +93,32 @@ debug.gralloc.enable_fb_ubwc=1
 debug.mdpcomp.logs=0
 debug.sf.enable_hwc_vds=1
 debug.sf.hw=0
-debug.sf.latch_unsignaled=1
 debug.sf.recomputecrop=0
 dev.pm.dyn_samplingrate=1
 persist.demo.hdmirotationlock=false
 persist.hwc.enable_vds=1
 persist.hwc.mdpcomp.enable=true
+ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
 ro.opengles.version=196610
+ro.surface_flinger.use_color_management=true
 ro.qualcomm.cabl=0
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
 ro.surface_flinger.max_virtual_display_dimension=4096
 ro.vendor.display.cabl=2
+ro.surface_flinger.use_color_management=true
 sdm.debug.disable_skip_validate=1
 vendor.display.disable_skip_validate=1
+vendor.display.disable_rotator_downscale=1
 vendor.display.enable_default_color_mode=1
 vendor.gralloc.enable_fb_ubwc=1
 ro.config.avoid_gfx_accel=true
 ro.vendor.qti.am.reschedule_service=true
 debug.egl.force_msaa=1
+
+# ebpf
+ro.kernel.ebpf.supported=false
 
 # DRM
 drm.service.enabled=true
@@ -154,6 +161,7 @@ ro.vendor.qti.sys.fw.bservice_enable=true
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
+ro.vendor.perf.scroll_opt=true
 
 # Network manager daemon
 ro.vendor.use_data_netmgrd=true
@@ -192,3 +200,7 @@ vendor.service.qti.ims.enabled=1
 
 # Time Services
 persist.timed.enable=true
+
+# Soc
+ro.soc.manufacturer=QTI
+ro.soc.model=MSM8937

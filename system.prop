@@ -1,6 +1,11 @@
 # Fwk detect
 ro.vendor.qti.va_aosp.support=1
 
+# Blur
+ro.sf.blurs_are_expensive=1
+ro.surface_flinger.supports_background_blur=1
+debug.sf.disable_backpressure=1
+
 # Debug
 debug.composition.type=c2d
 debug.sf.latch_unsignaled=1
@@ -33,3 +38,7 @@ ro.ril.sensor.sleep.control=1
 ro.kernel.android.checkjni=0
 ro.kernel.checkjni=0
 ro.compcache.default=0
+
+# SmoothUI
+persist.service.lgospd.enable=0
+persist.service.pcsync.enable=0
