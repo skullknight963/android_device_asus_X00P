@@ -74,6 +74,10 @@ on init
    write /dev/stune/top-app/schedtune.colocate 1
    write /sys/module/qpnp_rtc/parameters/poweron_alarm 1
 
+   # ZRAM
+   write /proc/sys/vm/page-cluster 0
+   write /proc/sys/vm/swappiness 130
+
 service qfp-daemon /system/vendor/bin/qfp-daemon
    class late_start
    user system
@@ -297,3 +301,7 @@ on boot
 on property:sys.boot_completed=1 && property:sys.ftrace.debug.on=0
     write /d/tracing/tracing_on 0
     write /sys/kernel/debug/tracing/tracing_on 0
+
+    # Enable ZRAM on boot_complete
+    swapon_all /vendor/etc/fstab.qcom
+    write /proc/sys/vm/swappiness 130
