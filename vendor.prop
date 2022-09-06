@@ -28,6 +28,17 @@ vendor.voice.playback.conc.disabled=true
 vendor.voice.record.conc.disabled=false
 vendor.voice.voip.conc.disabled=true
 
+# ART
+dalvik.vm.boot-dex2oat-cpu-set=0,1,2,3,4,5,6,7
+dalvik.vm.boot-dex2oat-threads=8
+dalvik.vm.dex2oat-cpu-set=0,1,2,3,4,5,6,7
+dalvik.vm.dex2oat-filter=quicken
+dalvik.vm.dex2oat-threads=8
+dalvik.vm.dex2oat64.enabled=true
+dalvik.vm.image-dex2oat-cpu-set=0,1,2,3,4,5,6,7
+dalvik.vm.image-dex2oat-filter=quicken
+dalvik.vm.image-dex2oat-threads=8
+
 # Bluetooth
 bluetooth.hfp.client=1
 qcom.bluetooth.soc=smd
@@ -58,6 +69,19 @@ persist.vendor.cne.feature=1
 persist.vendor.dpm.feature=1
 persist.vendor.dpm.loglevel=0
 
+# Dalvik
+dalvik.vm.heapgrowthlimit=192m
+dalvik.vm.heapmaxfree=8m
+dalvik.vm.heapminfree=512k
+dalvik.vm.heapsize=512m
+dalvik.vm.heapstartsize=8m
+dalvik.vm.heaptargetutilization=0.75
+dalvik.vm.dexopt-flags=o=y,m=y,v=n
+dalvik.vm.execution-mode=int:jit
+dalvik.vm.verify-bytecode=true
+dalvik.vm.jmiopts=forcecopy
+persist.sys.dalvik.vm.lib=libdvm.so
+
 # Coresight
 persist.debug.coresight.config=stm-events
 
@@ -85,9 +109,15 @@ sdm.debug.disable_skip_validate=1
 vendor.display.disable_skip_validate=1
 vendor.display.enable_default_color_mode=1
 vendor.gralloc.enable_fb_ubwc=1
+ro.config.avoid_gfx_accel=true
+ro.vendor.qti.am.reschedule_service=true
+debug.egl.force_msaa=1
 
 # DRM
 drm.service.enabled=true
+
+# Emmc size
+ro.emmc_size=32GB
 
 # Fingerprint
 persist.qfp=false
