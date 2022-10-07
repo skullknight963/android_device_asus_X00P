@@ -65,7 +65,7 @@
     </integer-array>
     <!-- Flag indicating whether the we should enable the automatic brightness in Settings.
          Software implementation will be used if config_hardware_auto_brightness_available is not set -->
-     <bool name="config_automatic_brightness_available">true</bool>
+
 
     <!-- Array of desired screen brightness in nits corresponding to the lux values
          in the config_autoBrightnessLevels array. As with config_screenBrightnessMinimumNits and
