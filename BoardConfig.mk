@@ -71,6 +71,10 @@ OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 
 TARGET_SCREEN_DENSITY := 320
 
+# Dexpreopt
+WITH_DEXPREOPT := true
+WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY := true
+
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
