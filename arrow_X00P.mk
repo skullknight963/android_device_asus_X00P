@@ -10,7 +10,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/arrow/config/common.mk)
 
 # Inherit from X00P device
 $(call inherit-product, device/asus/X00P/device.mk)
@@ -19,8 +19,10 @@ $(call inherit-product, device/asus/X00P/device.mk)
 PRODUCT_BRAND := asus
 PRODUCT_DEVICE := X00P
 PRODUCT_MANUFACTURER := asus
-PRODUCT_NAME := lineage_X00P
+PRODUCT_NAME := arrow_X00P
 PRODUCT_MODEL := ASUS_X00PD
+
+ARROW_GAPPS := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-asus
 
