@@ -15,4 +15,6 @@ rm -rf hardware/qcom-caf/msm8996/display
 git clone https://github.com/LineageOS/android_hardware_qcom_media --single-branch -b lineage-19.1-caf-msm8996 hardware/qcom-caf/msm8996/media
 git clone https://github.com/LineageOS/android_hardware_qcom_audio --single-branch -b lineage-19.1-caf-msm8996 hardware/qcom-caf/msm8996/audio
 git clone https://github.com/LineageOS/android_hardware_qcom_display --single-branch -b lineage-19.1-caf-msm8996 hardware/qcom-caf/msm8996/display
+rm -rf packages/apps/Updater/res/values
+git clone https://github.com/Vhmit/Addon_Ota_X00P -b arrow packages/apps/Updater/res/values
 echo ""
