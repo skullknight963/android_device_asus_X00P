@@ -415,7 +415,8 @@ PRODUCT_COPY_FILES += \
 
 # Packages
 PRODUCT_PACKAGES += \
-    QPGallery
+    QPGallery \
+    Via
 
 # Dexpreopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
