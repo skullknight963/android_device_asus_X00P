@@ -5,7 +5,6 @@ ro.vendor.qti.va_aosp.support=1
 ro.sf.blurs_are_expensive=1
 ro.surface_flinger.supports_background_blur=1
 debug.sf.disable_backpressure=1
-ro.launcher.blur.appLaunch=0
 
 # Debug
 debug.composition.type=c2d
@@ -39,6 +38,12 @@ ro.ril.sensor.sleep.control=1
 ro.kernel.android.checkjni=0
 ro.kernel.checkjni=0
 ro.compcache.default=0
+
+# Play store
+ro.com.google.clientidbase.am=android-asus
+ro.com.google.clientidbase.gmm=android-asus
+ro.com.google.clientidbase.ms=android-asus
+ro.com.google.clientidbase.yt=android-asus
 
 # SmoothUI
 persist.service.lgospd.enable=0

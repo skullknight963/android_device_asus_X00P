@@ -209,7 +209,7 @@ vendor.service.qti.ims.enabled=1
 persist.timed.enable=true
 
 # Soc
-ro.soc.manufacturer=QTI
+ro.soc.manufacturer=Qualcomm
 ro.soc.model=MSM8937
 
 # Wifi

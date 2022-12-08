@@ -14,6 +14,15 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
+#Hardware
+PRODUCT_BOARD_PLATFORM := $(msm8937) 
+PRODUCT_USES_QCOM_HARDWARE := true
+
+#HALs
+SRC_AUDIO_HAL_DIR := hardware/qcom-caf/$(msm8996)/audio 
+SRC_DISPLAY_HAL_DIR := hardware/qcom-caf/$(msm8996)/display 
+SRC_MEDIA_HAL_DIR := hardware/qcom-caf/$(msm8996)/media
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
