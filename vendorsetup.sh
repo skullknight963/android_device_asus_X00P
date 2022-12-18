@@ -9,4 +9,6 @@ rm -rf system/bpf
 rm -rf system/netd
 git clone https://github.com/mitoaprendiz/platform_system_bpf -b lineage-19.1 system/bpf
 git clone https://github.com/mitoaprendiz/platform_system_netd -b lineage-19.1 system/netd
+rm -rf packages/apps/Updater/res/values
+git clone https://github.com/Vhmit/Addon_Ota_X00P -b lineage packages/apps/Updater/res/values
 echo ""
