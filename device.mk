@@ -171,6 +171,27 @@ PRODUCT_PACKAGES += \
     FMRadio \
     libfmjni
 
+# GPS
+PRODUCT_PACKAGES += \
+    android.hardware.gnss@2.1-impl-qti:64 \
+    android.hardware.gnss@2.1-service-qti \
+    libavservices_minijail.vendor \
+    libbatching \
+    libgeofencing \
+    libgnss \
+    libgnsspps \
+    libsynergy_loc_api
+
+PRODUCT_PACKAGES += \
+    apdr.conf \
+    flp.conf \
+    gnss_antenna_info.conf \
+    gps.conf  \
+    izat.conf \
+    lowi.conf \
+    sap.conf \
+    xtwifi.conf
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
