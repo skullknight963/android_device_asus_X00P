@@ -1,2 +1,16 @@
+# ART
+dalvik.vm.dex2oat64.enabled=true
+dalvik.vm.boot-dex2oat-threads=8
+dalvik.vm.dex2oat-filter=speed
+dalvik.vm.dex2oat-threads=8
+dalvik.vm.image-dex2oat-filter=speed
+ro.sys.fw.dex2oat_thread_count=8
+
+# Boot
+sys.vendor.shutdown.waittime=500
+
+# Emmc size
+ro.emmc_size=32GB
+
 # Fwk detect
 ro.vendor.qti.va_aosp.support=1
