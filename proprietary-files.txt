@@ -2165,14 +2165,13 @@ vendor/lib64/vendor.display.color@1.0.so
 vendor/lib64/vendor.display.postproc@1.0.so
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 
-# Power-off alarm
-product/framework/vendor.qti.hardware.alarm-V1.0-java.jar
--product/app/PowerOffAlarm/PowerOffAlarm.apk
-vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service
-vendor/bin/power_off_alarm
-vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
-vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
-vendor/lib64/vendor.qti.hardware.alarm@1.0.so
+# Power-off alarm - from SLD_sprout 11-RKQ1.210607.001-00WW_3_490-release-keys
+-product/app/PowerOffAlarm/PowerOffAlarm.apk|16d7fc0e296da58f6e4ea9368b2743b8a7417a1c
+vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service|d679cb7181d991ef61873789529c55ba3db15c8e
+vendor/bin/power_off_alarm|9f800336a28ad1ad111f164b8c779313cddc98c1
+vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc|c9877b6cae0353d5fdea5bc23dba77101b3d6980
+vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so|a6a9069197d32ca58e0d8058815989c4b0a9a5cc
+vendor/lib64/vendor.qti.hardware.alarm@1.0.so|ff9aaa2d84bcb3be7b0aebd4f0f9e60536a8604a
 
 # QMI
 etc/permissions/privapp-permissions-qti.xml
