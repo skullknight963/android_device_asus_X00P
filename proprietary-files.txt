@@ -1971,7 +1971,6 @@ vendor/lib/egl/libGLESv1_CM_adreno.so
 vendor/lib/egl/libGLESv2_adreno.so
 vendor/lib/egl/libQTapGLES.so
 vendor/lib/egl/libq3dtools_adreno.so
-vendor/lib/hw/vulkan.msm8937.so
 vendor/lib/libC2D2.so
 vendor/lib/libCB.so
 vendor/lib/libOpenCL.so
@@ -1993,7 +1992,6 @@ vendor/lib64/egl/libGLESv1_CM_adreno.so
 vendor/lib64/egl/libGLESv2_adreno.so
 vendor/lib64/egl/libQTapGLES.so
 vendor/lib64/egl/libq3dtools_adreno.so
-vendor/lib64/hw/vulkan.msm8937.so
 vendor/lib64/libC2D2.so
 vendor/lib64/libCB.so
 vendor/lib64/libOpenCL.so
@@ -2023,6 +2021,10 @@ vendor/lib64/libsdm-diag.so
 -vendor/lib64/libsdm-disp-vndapis.so
 vendor/lib64/libsdmextension.so
 vendor/lib64/libtinyxml2_1.so
+
+# Vulkan Graphics - from LA.UM.9.6.3.r1-04400-89xx.0
+vendor/lib/hw/vulkan.adreno.so|05f9eb297408d1cb7b615ff7f209e23ebce1b4f4
+vendor/lib64/hw/vulkan.adreno.so|8fc0e7b875aba52d2fe1647e8132dd2673166257
 
 # Graphics firmware
 vendor/firmware/a300_pfp.fw

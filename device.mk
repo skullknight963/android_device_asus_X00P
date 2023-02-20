@@ -148,6 +148,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libdisplayconfig \
+    libvulkan \
     liboverlay \
     libqdMetaData.system \
     libgenlock \
