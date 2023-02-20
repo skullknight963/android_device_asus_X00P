@@ -1813,8 +1813,8 @@ vendor/lib64/libcdsp_default_listener.so
 vendor/lib64/libfastrpc_utf_stub.so
 vendor/lib64/libsysmon_cdsp_skel.so
 
-# Charger
-vendor/bin/hvdcp_opti
+# Charger - from SLD_sprout 11-RKQ1.210607.001-00WW_3_490-release-keys
+vendor/bin/hvdcp_opti|120837d6d44abfd86515731dd26183be9cdd5596
 
 # DPM
 framework/tcmclient.jar
@@ -1864,6 +1864,10 @@ vendor/bin/dspservice|c7809e32581d5c6efac65a3a7689f43526c17bb8
 vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc|fbf2bb38ca6bdddf98c7123da9e1f263a4eec55f
 vendor/lib/vendor.qti.hardware.dsp@1.0.so|41bdb4d9eda88cebfbc3bc6db64ff875416dbf5a
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so|5f30d9c5fff738e6194a36a5b93372fa32ec0471
+
+# ESE-Powermanager - from SLD_sprout 11-RKQ1.210607.001-00WW_3_490-release-keys
+vendor/lib/vendor.qti.esepowermanager@1.0.so|3ad46d39155d30cb08ad4d4921fda46880522e91
+vendor/lib64/vendor.qti.esepowermanager@1.0.so|1733bdbfc87ff22dfb844e75abd3525065695406
 
 # Fingerprint
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
